@@ -35,7 +35,7 @@ RUN { \
 	} | debconf-set-selections \
 	&& apt-get update \
 	&& apt-get install -y \
-		mariadb-galera-server=$MARIADB_VERSION \
+		mariadb-server=$MARIADB_VERSION \
         curl \
         jq \
 	&& rm -rf /var/lib/apt/lists/* \
